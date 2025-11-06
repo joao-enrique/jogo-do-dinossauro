@@ -22,5 +22,23 @@ window.onload = function () {
     board.height = boardHeight
     board.width = boardWidth
 
-    context = board.context("2d") // used drawing on the board
+    context = board.getContext("2d") // used drawing on the board
+
+    // draw initial dinosaur
+    // context.fillStyle="green"
+    // context.fillRect(dino.x, dino.y, dino.width, dino.height)
+
+    dinoImg = new Image()
+    dinoImg.src = "./assets/dino.png"
+    dinoImg.onload = function() {
+        context.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height)
+    }
+
+    requestAnimationFrame(update)
+}
+
+function update(){
+    requestAnimationFrame(update)
+
+    context.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height)
 }

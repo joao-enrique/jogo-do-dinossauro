@@ -32,6 +32,14 @@ let cactus1Img
 let cactus2Img
 let cactus3Img
 
+//physics
+let velocityX = -8 // cactus moving left speed
+let velocityY = 0
+let gravity = .4
+
+let gameOver = false
+let score = 0
+
 window.onload = function () {
     board = document.getElementById("board")
     board.height = boardHeight
@@ -60,22 +68,45 @@ window.onload = function () {
 
     requestAnimationFrame(update)
     setInterval(placeCactus, 1000)
+    document.addEventListener("keydown", moveDino);
 }
 
 function update(){
     requestAnimationFrame(update)
+    if (gameOver){
+        return
+    }
+
+    context.clearRect(0, 0, board.width, board.height)
 
     // dino
+    velocityY += gravity
+    dino.y = Math.min(dino.y + velocityY, dinoY) // apply gravity in the dino
     context.drawImage(dinoImg, dino.x, dino.y, dino.width, dino.height)
 
     // cactus
     for ( let i = 0; i < cactusArray.length; i++){
         let cactus = cactusArray[i]
+        cactus.x += velocityX
         context.drawImage(cactus.img, cactus.x, cactus.y, cactus.width, cactus.height)
     }
 }
 
+function moveDino(e){
+    if (gameOver){
+        return
+    }
+
+    if((e.code == "Space" || e.code == "ArrowUp") && dino.y == dinoY){
+        // jump
+        velocityY = -10
+    }
+}
+
 function placeCactus(){
+    if (gameOver){
+        return
+    }
     // place cactus
     let cactus = {
         img: null,
@@ -104,5 +135,9 @@ function placeCactus(){
         cactus.img = cactus1Img
         cactus.width = cactus1Width
         cactusArray.push(cactus)
+    }
+
+    if(cactusArray.length > 5){
+        cactusArray.shift() // remove the first element from the array so that the array doesn't constantly grow
     }
 }

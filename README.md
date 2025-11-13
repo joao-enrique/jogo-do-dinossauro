@@ -1,50 +1,140 @@
-<h1 align="left">🦖 Dino Runner — O Jogo do Dinossauro em HTML, CSS e JS</h1>
-
-<div align="center">
-  <a href="jogo-do-dinossauro-amber.vercel.app" target="_blank">
-    <img src="https://i.ibb.co/PvmND5Sk/CONFIRA-O-PROJETO-AQUI-1.png" alt="Preview do Jogo" />
-  </a>
-</div>
-
-<p align="left"> <b>Um remake moderno do clássico jogo do dinossauro offline da Google! Corra, pule e desvie dos obstáculos em uma gameplay divertida e infinita — feita inteiramente com HTML, CSS e JavaScript puro.</b> </p>
-
-# 🚀 Tecnologias utilizadas
-- 🌐 HTML5 → Estrutura leve e sem dependências
-- 🎨 CSS3 → Animações e design responsivo
-- ⚡ JavaScript Vanilla → Mecânica de jogo e controle do dinossauro
-- 🧠 Game Loop simples → Controle de colisão, pontuação e velocidade progressiva
-
-<div align="right"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo" /> <img width="12" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo" /> <img width="12" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" /> </div>
+# 💼 Jogo do dinossauro
+> Um remake moderno do clássico jogo do dinossauro offline da Google!
 
 ---
 
-# 🎮 Como jogar
-- 🕹 Espaço ou seta para cima → Pular
-- ⚡ Evite os obstáculos → Cactos e pássaros aparecem aleatoriamente
-- 💯 Aumente sua pontuação → Quanto mais tempo correr, mais rápido o jogo fica
-- ☠️ Game Over → Colidiu? Basta apertar F5 para recomeçar!
+## 🚀 Demonstração
+🔗 **Acesse o projeto:** [link-do-deploy-aqui](https://jogo-do-dinossauro-amber.vercel.app/)  
 
-# 📂 Estrutura do projeto
-├── index.html        # Estrutura principal do jogo </br>
-├── style.css         # Estilos e animações </br>
-├── script.js         # Lógica e física do jogo </br>
-├── assets/           # Imagens e sons do dinossauro e obstáculos </br>
-└── README            # README </br>
+📸 **Preview:**  
+![Screenshot do portfólio](./assets/dino-game.png)
 
-# ✅ Funcionalidades
-- 🦖 Dinossauro animado com sprites
-- 🌵 Obstáculos aleatórios com dificuldade progressiva
-- 🕓 Sistema de pontuação automática
-- 🔄 Reinício rápido após colisão
+---
 
-# 📜 Licença
-Este projeto é open-source sob a licença MIT. </br>
-Sinta-se à vontade para estudar, modificar e usar como base para seus próprios jogos! 🚀
+## 📚 Sumário
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Tecnologias](#️-tecnologias)
+- [Funcionalidades](#-funcionalidades)
+- [Como Rodar o Projeto](#-como-rodar-o-projeto)
+- [Como Usar](#-como-usar)
+- [Screenshots](#️-screenshots)
+- [Aprendizados](#-aprendizados)
+- [Estrutura de Pastas](#-estrutura-de-pastas)
+- [Roadmap](#-roadmap)
+- [Links Úteis](#-links-úteis)
+- [Autor](#-autor)
+- [Licença](#-licença)
 
-🐱‍💻 Autor
+---
 
-Feito com 💚 por João Enrique
+## 💡 Sobre o Projeto
+Um remake moderno do clássico jogo do dinossauro offline da Google! Corra, pule e desvie dos obstáculos em uma gameplay divertida e infinita — feita inteiramente com **HTML, CSS e JavaScript puro**.
 
-<div align="right"> <a href="https://www.linkedin.com/in/joao-enrique-dev/" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin logo" /> </a> <a href="https://www.youtube.com/@joaocodedev" target="_blank"> <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="youtube logo" /> </a> <a href="https://jedev1.itch.io/" target="_blank"> <img src="https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itchdotio&logoColor=white" alt="itch logo" /> </a> <a href="https://www.instagram.com/joao__dev/" target="_blank"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="instagram logo" /> </a> <a href="https://www.tiktok.com/@joao__code" target="_blank"> <img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white" alt="tiktok logo" /> </a> </div>
+---
+
+## 🛠️ Tecnologias
+As principais tecnologias utilizadas neste projeto foram:
+
+- **HTML**
+- **CSS**
+- **Javascript**
+
+<div align="right">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css logo"  />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/javascript/F7DF1E" height="40" alt="javascript logo"  />
+</div>
+
+---
+
+## 📚 Funcionalidades
+- [x] 🦖 Dinossauro animado com sprites
+- [x] 🌵 Obstáculos aleatórios com dificuldade progressiva
+- [x] 🕓 Sistema de pontuação automática
+- [x] 🔄 Reinício rápido após colisão
+
+---
+
+## 📦 Como Rodar o Projeto
+Siga as etapas abaixo para executar o projeto localmente:
+
+```bash
+# Clone este repositório
+git clone https://github.com/joao-enrique/jogo-do-dinossauro.git
+
+# Acesse a pasta do projeto
+cd jogo-do-dinossauro
+
+# Abra o projeto com o Live Server
+# (Clique com o botão direito no arquivo index.html e selecione "Open with Live Server")
+💡
+```
+> 💡 Caso não tenha o Live Server instalado, procure a extensão “Live Server” no VS Code Marketplace e instale.
+
+---
+
+## 🧪 Como Usar
+1. Abra o jogo no navegador.
+2. Jogue o jogo.
+
+---
+
+## 🖼️ Screenshots
+### 💻 tela inicial
+![preview do portfólio](./assets/preview-1.PNG)
+### 💻 tela de game over
+![preview do portfólio](./assets/preview-2.PNG)
+
+---
+
+## 🧠 Aprendizados
+Durante o desenvolvimento deste projeto, aprimorei:
+- Meus conhecimentos no `Javascript`;
+- Criação de um jogo no navegador;
+- Aprimoração na linguagem `Javascript` para criação de jogos.
+
+---
+
+## 📁 Estrutura de Pastas
+jogo-do-dinossauro/ </br>
+├── assets/ </br>
+└── README.md </br>
+---
+
+## 🚧 Roadmap
+- [] melhorar sistemas de pontos
+- [] ajustar sprites
+
+---
+
+## 🔗 Links Úteis
+🌐 Deploy: [link](https://meu-portfolio-lemon-sigma.vercel.app/)  </br>
+💼 LinkedIn: [link](https://www.linkedin.com/in/joao-enrique-dev/) </br>
+🧠 GitHub: [link](https://github.com/joao-enrique) </br>
+🎮 Itch-io: [link](https://jedev1.itch.io/) </br>
+📹 YouTube: [link](https://www.youtube.com/@joaocodedev) </br>
+✨ Linktree: [link](https://linktree-eight-gules.vercel.app/) </br>
+
+## 👨‍💻 Autor
+Feito com 💜 por [João Enrique](https://linktree-eight-gules.vercel.app/)
+<div align="right">
+  <a href="https://www.linkedin.com/in/joao-enrique-dev/" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
+  </a>
+  <a href="https://www.youtube.com/@joaocodedev" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" width="52" height="40" alt="youtube logo"  />
+  </a>
+  <a href="https://jedev1.itch.io/" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/itch/default.svg" width="52" height="40" alt="itch logo"  />
+  </a>
+</div>
+
+---
+
+## 📜 Licença
+Este projeto está sob a licença **MIT** — veja o arquivo [LICENCE](./LICENSE) para mais detalhes.
 
 
+### ⭐ Se este projeto te inspirou, não esqueça de deixar uma **estrela** no repositório!
